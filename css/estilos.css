@@ -1,0 +1,74 @@
+@import url(estilos-principal.css);
+.contenedor {
+  padding: 50px;
+  display: flex;
+  flex-direction: column; }
+  .contenedor .contenedor__articulos {
+    display: flex;
+    margin-top: 50px; }
+    .contenedor .contenedor__articulos .contenedor_articulos--principal {
+      display: flex;
+      flex-direction: row;
+      background-color: #032a18;
+      color: white; }
+      .contenedor .contenedor__articulos .contenedor_articulos--principal img {
+        width: 60%; }
+      .contenedor .contenedor__articulos .contenedor_articulos--principal .descripcion {
+        display: flex;
+        flex-direction: column;
+        padding: 0 50px; }
+
+    .contenedor .contenedor__articulos .contenedor__articulos--secundario {
+      display: flex;
+      flex-flow: column wrap;
+      padding: 5px;
+      margin: 5px;
+      text-align: center;
+      border: 3px solid #032a18; }
+      .contenedor .contenedor__articulos .contenedor__articulos--secundario img {
+        width: 100%; }
+
+@media (max-width:576px){
+    .contenedor {
+      width: 100%;
+      padding: 20px;
+      display: flex;
+      flex-direction: column; 
+  }
+  .contenedor .contenedor__articulos {
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+    width: 100%; 
+  }
+
+  .contenedor .contenedor__articulos .contenedor_articulos--principal {
+    display: flex;
+    flex-direction: column;
+    background-color: #032a18;
+    color: white; 
+  }
+  .contenedor .contenedor__articulos .contenedor_articulos--principal img {
+    width: 100%; 
+  }
+  .contenedor .contenedor__articulos .contenedor_articulos--principal .descripcion {
+    display: flex;
+    flex-direction: column;
+    padding: 0 20px; 
+  }
+  .contenedor .contenedor__articulos .contenedor__articulos--secundario {
+    display: flex;
+    flex-flow: column wrap;
+    padding: 5px;
+    margin: 5px;
+    text-align: center;
+    border: 3px solid #032a18; 
+  }
+  .contenedor .contenedor__articulos .contenedor__articulos--secundario img {
+    width: 100%; 
+  }
+  .contenedor__articulos--secundario p{
+    display: none;
+  }
+}
+
