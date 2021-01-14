@@ -97,37 +97,71 @@ nav a:hover{
 }
 
 @media (max-width:768px){
+    
+    .flex-menu{
+        align-items: center;
+    }
+
+    .hero-home{
+        background-image: url("../imagenes/granos-de-cafe.webp");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        padding:0 0 50px;
+        height: 100vh;
+    }
+
+    nav {
+        text-align: center;
+        padding: 40px;   
+    }
+
+    nav a {
+        font-size: 15px;
+        color: white;
+        text-decoration: none;
+        margin-left: 5px;   
+    }
+    
     .hero h2{
-        margin: 80px 0 10px 0;
+        margin: 230px 0 10px 0;
+        padding: 30px;
         position: absolute;
-        top: 120px;
+        top:0;
         color: white;
         width: 100%;
-        font-size: 25px;
+        text-align: center;
+        font-size: 75px;
     }
     .hero p{
         padding: 10px 50px 50px;
         position: absolute;
-        top: 300px;
+        top: 400px;
         color: white;
-        width: 60%;
-        font-size: 12px;
-        text-transform: uppercase;
+        width: 100%;
+        text-align: center;
+        font-size: 30px;
     }
 
     .hero-secciones{
         padding:0 0 10px;
-        height: 80vh;
+        height: 40vh;
         width: 100%;
     }
 
     .hero-secciones h1{  
-        top: 50%;
-        font-size: 30px;
+        top: 20%;
+        font-size: 50px;
     }
 }
 
 @media (max-width:576px){
+    
+    nav {
+        margin-top: 25px; 
+        padding: 40px 20px;   
+    }
+
     .flex-menu{
         display: flex;
         flex-direction: column;
@@ -143,7 +177,7 @@ nav a:hover{
         background-image: url("../imagenes/granos-de-cafe.webp");
         height: 40vh;
     }
-
+    
     .hero h2{
         top: 50px;
         text-align: center;    
@@ -152,6 +186,30 @@ nav a:hover{
 
     .hero p{
         display: none;
+    }
+
+    .hero-secciones h1{  
+        color: white;
+        text-align: center;
+        margin: auto;
+        position: absolute;
+        top: 20%;
+        left: 25%;
+        right: 25%;
+        font-size: 30px;
+        text-transform: uppercase;
+    }
+
+    .hero h2{
+        margin: 30px 0 10px 0;
+        padding: 50px 50px 0px 50px;
+        position: absolute;
+        top: 50px;
+        color: white;
+        width: 100%;
+        text-align: center;
+        font-size: 20px;
+        text-transform: uppercase;
     }
 }
 
@@ -289,12 +347,6 @@ nav a:hover{
     text-align: center;  
 }
 
-.otros-servicios-home h3{
-    margin: 25px 0;
-    font-size: 40px;
-    text-transform: uppercase;
-}
-
 .flex-otros-servicios-home{
     display: flex;
     flex-flow: row wrap;
@@ -313,6 +365,33 @@ nav a:hover{
     height: 100%;
 }
 
+@media (max-width:768px){
+
+    .otros-servicios-home h3{
+        margin: 25px 0;
+        font-size: 40px;
+        text-transform: uppercase;
+    }
+
+    .flex-otros-servicios-home{
+        margin: 50px 0;
+        justify-content: space-around;
+    }
+
+    .flex-otros-servicios-home span{
+        margin: 0;
+     }
+
+    .flex-otros-servicios-home p{
+        display: none;
+    }
+
+    .flex-otros-servicios-home div{
+        margin: 20px;
+        width: 25%;
+        height: 100%;
+    }
+}
 
 @media (max-width:576px){
     .otros-servicios-home{
@@ -348,10 +427,6 @@ nav a:hover{
 
     .flex-otros-servicios-home h4{
         font-size: 15px;
-    }
-
-    .flex-otros-servicios-home div p{
-        display: none;
     }
 }
 
@@ -412,6 +487,54 @@ nav a:hover{
     color: white;
 }
 
+@media (max-width:768px){
+    .seccionProductosHome{
+        margin:20px 0 5px ;
+        padding: 100px 50px 50px;
+        background-color:#032a18;
+        color: white;
+    }
+    
+    .seccionProductosHome h3{
+        margin-bottom: 25px;
+        font-size: 30px;
+        text-transform: uppercase;
+    }
+
+    .seccionProductosHome>p{
+        padding: 25px 0px;
+        font-size: 20px;
+    }
+
+    .productosHome{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        margin: 20px 0;
+    }
+    .productosHome .productosHome__producto{
+        display: flex;
+        flex-flow: column wrap;
+        align-items: center;
+        width: 75%;
+        margin: 0;
+        padding:30px 0px;
+    }
+
+    .productosHome .productosHome__producto img{
+       width: 100%;
+       margin: 25px 0;
+    }
+    
+    .productosHome .productosHome__producto:hover{
+        /*background-color: #3f6c51;*/
+        /*background-color: #669374;*/
+        transform: none;
+        transition: 1s;
+    }
+}
+
 @media (max-width:576px){
     .seccionProductosHome{
         margin:20px 0 5px ;
@@ -443,18 +566,6 @@ nav a:hover{
         width: 100%;
         margin: 0;
         padding:30px 0px;
-    }
-
-    .productosHome .productosHome__producto img{
-       width: 100%;
-       margin: 25px 0;
-    }
-    
-    .productosHome .productosHome__producto:hover{
-        /*background-color: #3f6c51;*/
-        /*background-color: #669374;*/
-        transform: none;
-        transition: 1s;
     }
 }
 
@@ -511,24 +622,19 @@ footer .footer__horarios{
     grid-area: horarios;
 }
 
-@media (max-width:576px){
+@media (max-width:768px){
     .footer{
         display: grid;
         grid-template-areas:                    
-                            "contacto-footer"
-                            "redes-sociales";
-        grid-template-columns: 100%;
-        grid-template-rows: 60% 30%;
-        gap: 10px;
-        padding: 20px;
-        justify-content: center;
-        text-align: center; 
-        background-color: #032a18;
-        color:white;
+                            "logo contacto-footer"
+                            "logo redes-sociales";
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 50% 50%;
+        gap:20px;
     }
-    
-    .footer figure, .footer p {
-        display: none;
+
+    .footer p{
+        margin-top: 50%;
     }
     
     .footer .footer__contacto{
@@ -545,19 +651,34 @@ footer .footer__horarios{
     
     .footer .footer__redes-sociales{
         grid-area: redes-sociales;
-        height: 100%;
     }
 
-    .footer .footer__redes-sociales img{
-        width: 32px;
-    }
-    
     .footer .footer__horarios{
         display: none;
     }
 
     .footer .footer__locales{
         display: none;
+    }
+}
+
+@media (max-width:576px){
+    .footer{
+        display: grid;
+        grid-template-areas:                    
+                            "contacto-footer"
+                            "redes-sociales";
+        grid-template-columns: 100%;
+        grid-template-rows: 50% 50%;
+        gap:0;
+    }
+
+    .footer figure, .footer p{
+        display: none;
+    }
+
+    .footer .footer__redes-sociales{
+        margin-top: 30px;
     }
 }
 
@@ -633,8 +754,8 @@ footer .footer__horarios{
     text-align: right;
 }
 
-@media (max-width:576px){
-/*-- Contenedor del menu Bebidas y el menu postres --*/
+@media (max-width:768px){
+    
     .menu{
         display: flex;
         flex-direction: column;
@@ -648,7 +769,8 @@ footer .footer__horarios{
     }
 
     .menu h3{
-        font-size: 15px;
+        font-size: 25px;
+        margin-bottom: 5px;
     }
 
     .lista-poductos{
@@ -659,11 +781,10 @@ footer .footer__horarios{
         width: 100%;
         /*background-color: blue;*/
     }
-    
+
     .columna-1{
         padding: 20px;
         width: 100%;
-        height: 350px;
         background-color:#032a18;
         color: white;
     }
@@ -671,9 +792,23 @@ footer .footer__horarios{
     .columna-2{
         padding: 20px;
         width: 100%;
-        height: 350px;
         background-color:#032a18;
         color: white;
+    }
+
+}
+
+@media (max-width:576px){
+/*-- Contenedor del menu Bebidas y el menu postres --*/
+
+    .menu h3{
+        font-size: 15px;
+    }
+
+    
+    .columna-1, .columna-2 {
+        height: 350px;
+
     }
     
     /*-- Descripcion del producto --*/
@@ -683,7 +818,7 @@ footer .footer__horarios{
                             "imagen nombre-producto precio"
                             "imagen descripcion-producto precio";
         grid-template-columns: 50px 70% 10%;
-        grid-template-rows: 20px 20px;  
+        grid-template-rows: 20px 30px;  
         gap: 5px;
         margin-top: 20px;
     }
