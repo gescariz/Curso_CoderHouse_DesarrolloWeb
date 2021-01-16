@@ -853,6 +853,159 @@ footer .footer__horarios{
 }
 
 /*==================================PAGINA GALERIA====================================*/
+.titulo-galeria{
+    margin: 100px;
+    padding: 0 100px;
+    font-size: 40px;
+    text-align: center;
+}
+
+.contenedor-galeria{
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px 20px;
+}
+
+.galeria-imagenes{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: 
+                        'img-1 img-2 img-3 img-3'
+                        'img-1 img-4 img-5 img-6'
+                        'img-7 img-7 img-8 img-6' ;
+    gap: 10px;
+}
+
+.galeria-imagenes div{
+    width: 100%;
+    height: 250px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+   
+}
+
+.galeria-imagenes div:hover{
+    opacity: 0.8;
+}
+
+.img-1{
+    grid-area: img-1;
+    min-height: 510px;
+    background-image: url('../imagenes/galeria/cafe-negro.jpg');
+}
+
+.img-2{
+    grid-area: img-2;
+    background-image: url('../imagenes/galeria/cafe-trabajando.jpg');
+}
+
+.img-3{
+    grid-area: img-3;
+    background-image: url('../imagenes/galeria/cafe-cordoba.jpg');
+}
+
+.img-4{
+    grid-area: img-4;
+    background-image: url('../imagenes/galeria/cafe-baires2.jpg');
+}
+
+.img-5{
+    grid-area: img-5;
+    background-image: url('../imagenes/galeria/cafe-capuccino.jpg');
+}
+
+.img-6{
+    grid-area: img-6;
+    background-image: url('../imagenes/galeria/cafe-baires.jpg');
+    min-height: 510px;
+}
+
+.img-7{
+    grid-area: img-7;
+    background-image: url('../imagenes/galeria/cafe-rosario.jpg');
+}
+
+.img-8{
+    grid-area: img-8;
+    background-image: url('../imagenes/galeria/cafe-amigos.jpg');
+}
+
+@media (max-width:768px){
+
+    .titulo-galeria{
+        width: 100%;
+        margin: 50px 0;
+        padding: 0 40px;
+        font-size: 40px;
+        text-align: center;
+    }
+
+    .galeria-imagenes{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: auto;
+        grid-template-areas: 
+                            'img-1 img-1 img-2 img-2'
+                            'img-1 img-1 img-3 img-3'
+                            'img-4 img-4 img-5 img-5'
+                            'img-6 img-7 img-7 img-7'
+                            'img-8 img-8 img-8 img-8' ;
+        gap: 10px;
+    }
+
+    .galeria-imagenes div{
+        height: 250px;    
+    }
+
+    .img-1{
+        min-height: 510px;
+    }
+
+    .img-6{
+        min-height: 150px;
+    }
+}
+
+@media (max-width:576px){
+
+    .titulo-galeria{
+        margin: 20px 0;
+        padding: 10px;
+        font-size: 15px;
+    }
+
+    .galeria-imagenes{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: auto;
+        grid-template-areas: 
+                            'img-1 img-1 img-1 img-1'
+                            'img-2 img-2 img-2 img-2'
+                            'img-3 img-3 img-3 img-3'
+                            'img-4 img-4 img-4 img-4'
+                            'img-5 img-5 img-5 img-5'
+                            'img-6 img-6 img-6 img-6'
+                            'img-7 img-7 img-7 img-7'
+                            'img-8 img-8 img-8 img-8' ;
+        gap: 10px;
+    }
+
+    .galeria-imagenes div{
+        height: 200px;    
+    }
+
+    .img-1{
+        min-height: 200px;
+    }
+
+    .img-6{
+        min-height: 200px;
+    }
+}
+
 /*==================================PAGINA BLOG====================================*/
 /*==================================PAGINA CONTACTO====================================*/
 
